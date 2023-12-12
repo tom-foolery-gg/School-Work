@@ -19,20 +19,17 @@ def display():
         for i in range(top,-1,-1):
             print(stack[i])
 stack=[]
+push()
 ch='y'
 print('performing stack operations using list\n')
 while ch == 'y' or ch == 'Y':
-    print()
-    print('1.Push')
-    print('2.Pop')
-    print('3.Display')
+    print('1.Pop')
+    print('2.Display')
     opt=int(input('Enter your choice'))
     if opt == 1:
-        push()
-    elif opt == 2:
         pop()
-    elif opt ==3:
+    elif opt == 2:
         display()
     else:
         print('Invaild choice, try again!!!')
-    ch=input('\n Do you want to perform another operation(Y/N)')
+    ch=input('\n Do you want to perform another operation(Y/N)')``
